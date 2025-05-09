@@ -11,7 +11,7 @@ func NewAuthError(code int, text string) error {
 	return &AuthError{code, text}
 }
 func (e *AuthError) Error() string {
-	return fmt.Sprintf("Code\t%d, message\t%s", e.Code, e.Text)
+	return fmt.Sprintf(" Code\t%d, message\t%s", e.Code, e.Text)
 }
 
 var (
